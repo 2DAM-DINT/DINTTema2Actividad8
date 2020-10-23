@@ -30,7 +30,7 @@ namespace Actividad8
                 apellidoTextBlock.Text = "";
         }
 
-        private void EdadTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void EdadTextBox_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.F2 && !int.TryParse(edadTextBox.Text, out _))
                 edadTextBlock.Text = edadTextBlock.Tag.ToString();

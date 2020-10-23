@@ -70,7 +70,7 @@
             Width="165"
             Margin="50,290,0,0"
             FontSize="18"
-            KeyDown="EdadTextBox_KeyDown"/>
+            KeyUp="EdadTextBox_KeyUp"/>
         <TextBlock
             x:Name="edadTextBlock"
             VerticalAlignment="Top"
@@ -79,7 +79,6 @@
             Margin="0,290,40,0"
             FontSize="18"
             Foreground="Red"
-            Text="Edad incorrecta"
-            Visibility="Hidden" />
+            Tag="Edad incorrecta" />
     </Grid>
 </Window>
